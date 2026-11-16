@@ -1,0 +1,30 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= film.Title
+    link(rel="stylesheet" href="/css/styles.css")
+
+  body
+    h1= film.Title
+
+    img(src=film.Poster alt=`Póster de ${film.Title}`)
+
+    p
+      strong Año:
+      |  #{film.Year}
+
+    p
+      strong Director:
+      |  #{film.Director}
+
+    p
+      strong Género:
+      |  #{film.Genre}
+
+    p
+      strong Argumento:
+      |  #{film.Plot}
+
+    a(href="/") Volver al buscador

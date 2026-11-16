@@ -1,0 +1,135 @@
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #101820, #172b3a, #0b1118);
+}
+
+/* Título principal */
+h1 {
+  margin-bottom: 35px;
+  color: #f5c518;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Formulario de búsqueda */
+form {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #1c2b38;
+  border: 1px solid #344b5e;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+label {
+  color: #dce4eb;
+  font-size: 1.05rem;
+}
+
+input {
+  padding: 14px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #101820;
+  border: 1px solid #526779;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #f5c518;
+  box-shadow: 0 0 0 3px rgba(245, 197, 24, 0.15);
+}
+
+/* Botón de búsqueda */
+button {
+  padding: 14px;
+  color: #101820;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f5c518;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ffd83d;
+  transform: translateY(-2px);
+}
+
+/* Póster de la película */
+img {
+  display: block;
+  width: 230px;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  border: 3px solid #f5c518;
+  border-radius: 10px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Información de la película */
+p {
+  max-width: 700px;
+  margin: 12px auto;
+  padding: 14px 18px;
+  line-height: 1.6;
+  background-color: rgba(28, 43, 56, 0.9);
+  border-left: 3px solid #f5c518;
+  border-radius: 5px;
+}
+
+strong {
+  color: #f5c518;
+}
+
+/* Enlaces */
+a {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px 22px;
+  color: #101820;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f5c518;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #ffd83d;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+  body {
+    padding: 35px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 25px 20px;
+  }
+}
